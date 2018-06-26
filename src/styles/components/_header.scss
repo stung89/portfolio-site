@@ -1,0 +1,27 @@
+.sidenav {
+    background-color: $color-primary;
+    fill: #FFFFFF;
+    
+
+    &__icons, &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    &__icons {
+        padding: 10rem 0;
+    }
+
+    .logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    &__icon {
+        height: 5rem;
+        width: 5rem;
+        margin: 2rem 0;
+    }
+
+}
