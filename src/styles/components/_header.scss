@@ -1,27 +1,48 @@
 .sidenav {
     background-color: $color-primary;
-    fill: #FFFFFF;
+    grid-column: 1 / 2;
     
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 
     &__icons, &__link {
         display: flex;
         flex-direction: column;
         align-items: center;   
+        padding: 1rem;
     }
 
-    &__icons {
-        padding: 10rem 0;
+    &__link .icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &__link {
+        justify-content: end;
     }
 
     .logo {
-        width: 8rem;
-        height: 8rem;
+        max-width: 7rem;
+        max-height: 7rem;
+        justify-self: center;
+        padding-top: .5rem;
     }
 
     &__icon {
         height: 5rem;
         width: 5rem;
-        margin: 2rem 0;
+        margin: 1rem 0;
+        fill: #fff;
+
+        &:hover {
+            fill: $color-primary-dark;
+        }
     }
 
+}
+// this should fill the color of the icon when the NavLink is active only
+.is-active > svg {
+    fill: $color-primary-dark;
+    
 }

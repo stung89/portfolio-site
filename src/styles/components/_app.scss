@@ -1,13 +1,16 @@
 // COLOR VARIABLES
 $color-primary: #C0DFD9;
-$color-primary-dark: #B28451;
+$color-primary-dark: #6AAC9F;
+// $color-primary-dark: #B28451;
 
-$color-secondary: #101d2c;
+$color-secondary: #E9ECE5;
+
+$color-tertiary: #B3C2BF;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
-$color-grey-dark-1: #54483A;
+$color-grey-dark-1: #3B3A36;
 $color-grey-dark-2: rgb(124, 120, 116);
 
 // FONT VARIABLES
@@ -69,15 +72,24 @@ body {
 .container {
     display: grid;
     grid-template-rows: 100vh;
-    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
-    [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    // grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
+    // [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: 8rem 1fr;
 
-    @media screen and (max-width: $bp-large) {
-        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
-        [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
-    }
+    // @media screen and (max-width: $bp-large) {
+    //     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
+    //     [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    // }
 
     @media screen and (max-width: $bp-medium) {
         
     }
+}
+
+.heading-1 {
+    font-size: 15rem;
+}
+
+.heading-2 {
+    font-size: 8rem;
 }
