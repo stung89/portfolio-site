@@ -1,9 +1,14 @@
-.container {
-    grid-column: 2 / -1;
+// this broke after adding PageTransition to the AppRouter
+// fixed again?
 
+.container {
     display: grid;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+
+    height: 100vh;
     grid-template-columns: repeat(13, 1fr);    
-    // grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     &__left {
         background-color: $color-secondary;
         grid-column: 1 / 11;

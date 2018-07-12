@@ -4,7 +4,7 @@ import Icon from './Icon';
 
 const Header = () => (
   <header className="sidenav">
-    <img src="images/st-black.png" alt="Logo" className="logo"/>
+    <img src="images/st-dark-grey.png" alt="Logo" className="logo"/>
     <div className="sidenav__icons">
       <NavLink to="/" activeClassName="is-active" exact={true}><Icon name="icon-home"/></NavLink>
       <NavLink to="/about" activeClassName="is-active" exact={true}><Icon name="icon-user"/></NavLink>
