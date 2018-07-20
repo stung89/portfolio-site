@@ -8,9 +8,9 @@ import PortfolioItemPage from '../components/PortfolioItemPage';
 import PortfolioPage from '../components/PortfolioPage';
 import AboutPage from '../components/AboutPage';
 import ToolPage from '../components/ToolPage';
-// import Playground from '../components/Playground';
 import PageTransition from 'react-router-page-transition';
 
+// Old code worked before adding page transition
 
 // const AppRouter = ({ location }) => (
 //   <BrowserRouter>
@@ -31,6 +31,10 @@ import PageTransition from 'react-router-page-transition';
 //   </BrowserRouter>
 // );
 
+
+
+// changed to a class component and works now with page transition feature
+
 class AppRouter extends React.Component {
   render() {
     return (
@@ -38,7 +42,8 @@ class AppRouter extends React.Component {
         <Route 
           render={({ location }) => (
             // <div className="container-main">
-            <PageTransition timeout={500}>
+            // The classnames were added to each components instead
+            <PageTransition timeout={300}>
               <Header />
               <Switch location={location}>
                 <Route path="/" component={HomePage} exact={true} />

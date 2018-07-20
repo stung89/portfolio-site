@@ -1,10 +1,10 @@
 .detail-page {
     overflow: auto;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1rem;
     height: 100vh;
-    background-color: #03a9f4;
-    transition: transform 0.5s, opacity 0.5s;
+    background-color: $color-grey-light-1;
+    transition: transform 0.3s, opacity 0.3s;
   
     &.transition-appear {
       opacity: 0;

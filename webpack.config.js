@@ -1,4 +1,8 @@
+// const webpack = require('webpack');
 const path = require('path');
+
+// var BUILD_DIR = path.resolve(__dirname, './build');
+// var APP_DIR = path.resolve(__dirname, './src/client');
 
 module.exports = {
   entry: './src/app.js',

@@ -89,8 +89,58 @@ body {
 
 .heading-1 {
     font-size: 15rem;
+    // width: 40%;
 }
 
 .heading-2 {
     font-size: 8rem;
+}
+
+.container {
+    display: grid;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+
+    height: 100vh;
+    grid-template-columns: repeat(13, 1fr);    
+    // grid-template-rows: repeat(6, 1fr);
+    &__left {
+        grid-column: 1 / 11;
+        grid-row: 1 / -1;
+        padding: 5rem;
+
+        &--1 {
+            background-color: $color-secondary;
+        }
+
+        &--2 {
+            background-color: $color-tertiary;
+        }
+
+        &--3 {
+            background-color: $color-grey-dark-1;
+        }
+    }
+
+    &__right {
+        grid-column: 11 / -1;
+        grid-row: 1 / -1;
+
+        &--1 {
+            background-color: $color-tertiary;
+        }
+
+        &--2 {
+            background-color: $color-grey-dark-1;
+        }
+    }
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100%;
+    grid-column: 10 / 12;
+    grid-row: 1 / 2;
+    z-index: 2;
+    margin-top: 10rem;
 }
