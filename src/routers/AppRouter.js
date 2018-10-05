@@ -9,6 +9,7 @@ import PortfolioPage from '../components/PortfolioPage';
 import AboutPage from '../components/AboutPage';
 import ToolPage from '../components/ToolPage';
 import PageTransition from 'react-router-page-transition';
+import { handleSubmit, resetForm } from '../handleSubmit';
 
 // Old code worked before adding page transition
 
