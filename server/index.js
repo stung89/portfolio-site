@@ -1,11 +1,18 @@
 //backend server; not working yet...
 
 const express = require('express');
-const path = require('path');
-const nodemailer = require('nodemailer');
 const app = express();
+const path = require('path');
+const publicPath = path.join(__dirname, '..', 'public');
+const port = process.env.PORT || 3000;
+const nodemailer = require('nodemailer');
 
-app.use(express.static(__dirname +'../server/index.js'));
+// app.use(express.static(__dirname +'../server/index.js'));
+app.use(express.static(publicPath));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(publicPath, 'index.html'));
+})
 
 app.post('/send', (req, res) => {
 	const output = `
@@ -57,4 +64,4 @@ app.post('/send', (req, res) => {
 
 
 
-app.listen(3000, () => console.log('backend server has started'));
+app.listen(port, () => console.log('backend server has started'));
