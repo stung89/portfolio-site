@@ -1,0 +1,53 @@
+[33mcommit 617dd00a69d5bdf4187f510313ca097169dffc98[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Nov 29 21:08:54 2018 -0800
+
+    re-update package.json
+
+[33mcommit 5e0d0e9f29e8af92a843f85e53f50769cad2aac7[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Nov 29 21:07:33 2018 -0800
+
+    update package.json file
+
+[33mcommit 103a805961775a959420ffd5b076c36491bbab66[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Nov 29 20:20:42 2018 -0800
+
+    setup production build and server
+
+[33mcommit 20a87cf5fe1bc63f17fe95af659453d954f7ecd9[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Nov 29 19:28:39 2018 -0800
+
+    setup production webpack build
+
+[33mcommit a0a2ff2d699458d2e28fedf9f8ee95f7cf94824b[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Fri Oct 5 13:13:10 2018 -0700
+
+    add toggle to aboutpage
+
+[33mcommit f7195fa13f9bd1fb751164c14ca5fad85fcee82c[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Jul 19 21:29:17 2018 -0700
+
+    install express
+
+[33mcommit 8249de1b696a4a9cc7b716c52c0c2e5ffffd1d20[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Thu Jul 12 12:34:08 2018 -0700
+
+    add page transition
+
+[33mcommit 1130db5b410a79069f23f38c33195d7c78eae20b[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Mon Jul 9 22:34:01 2018 -0700
+
+    implement react-router-page-transition
+
+[33mcommit 1a4ce59c3f776ef8dc421f0dc0f222c6f213aa53[m
+Author: Steven Tung <stung89@gmail.com>
+Date:   Tue Jun 26 12:19:53 2018 -0700
+
+    initial commit
